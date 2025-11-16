@@ -13,6 +13,7 @@ substitutions:
   _AR_LOCATION: europe-north1
   _AR_REPOSITORY: ourimages
   _HOSTNAME: fortuneplay.fun
+  _ALT_HOSTNAME: www.fortuneplay.fun
   # optional DNS automation, fill only if you want it
 
 
@@ -106,6 +107,15 @@ steps:
                         name: ${_APP_NAME}
                         port: { number: ${_SERVICE_PORT} }
             - host: www.${_HOSTNAME}
+              http:
+                paths:
+                  - path: /
+                    pathType: Prefix
+                    backend:
+                      service:
+                        name: ${_APP_NAME}
+                        port: { number: ${_SERVICE_PORT} }
+            - host: ${_ALT_HOSTNAME}
               http:
                 paths:
                   - path: /
