@@ -16,7 +16,6 @@ substitutions:
   _ALT_HOSTNAME: www.fortuneplay.fun
   # optional DNS automation, fill only if you want it
 
-
 steps:
   - name: gcr.io/cloud-builders/docker
     id: Build image
