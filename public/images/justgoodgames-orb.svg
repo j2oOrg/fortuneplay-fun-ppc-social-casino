@@ -1,0 +1,29 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Just Good Games orb logo">
+  <defs>
+    <radialGradient id="justgoodgames-orb-glow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#42f5b8" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#3ac9ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffb35c" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="justgoodgames-orb-wave" x1="32" y1="24" x2="128" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#42f5b8"/>
+      <stop offset="50%" stop-color="#3ac9ff"/>
+      <stop offset="100%" stop-color="#ffb35c"/>
+    </linearGradient>
+    <filter id="justgoodgames-orb-shadow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feOffset dy="8" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.35"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="offset"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="80" cy="80" r="66" fill="url(#justgoodgames-orb-glow)" filter="url(#justgoodgames-orb-shadow)"/>
+  <path d="M40 102C62 108 74 66 100 72C120 76 120 100 132 108" stroke="url(#justgoodgames-orb-wave)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M36 66C52 42 88 40 104 60C118 78 130 82 134 78" stroke="url(#justgoodgames-orb-wave)" stroke-width="9" stroke-linecap="round" opacity="0.65"/>
+</svg>
