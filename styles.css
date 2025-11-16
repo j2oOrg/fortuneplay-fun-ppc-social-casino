@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #040214;
-  --bg-soft: #0a0f2b;
-  --surface: rgba(12, 16, 38, 0.94);
-  --surface-alt: rgba(18, 24, 48, 0.88);
-  --surface-card: rgba(255, 255, 255, 0.04);
-  --brand-electric: #fc9051;
-  --brand-violet: #f06dff;
-  --brand-amber: #ffd45f;
-  --brand-slate: #8fd7ff;
-  --text: #fff8ff;
-  --muted: rgba(255, 240, 255, 0.76);
-  --muted-soft: rgba(255, 240, 255, 0.58);
-  --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.18);
-  --shadow-soft: 0 35px 90px rgba(3, 5, 17, 0.55);
+  --bg: #020216;
+  --bg-soft: #071437;
+  --surface: rgba(7, 11, 30, 0.95);
+  --surface-alt: rgba(11, 18, 42, 0.9);
+  --surface-card: rgba(255, 255, 255, 0.06);
+  --brand-electric: #f8cf5d;
+  --brand-violet: #3fe2d6;
+  --brand-amber: #ffe58b;
+  --brand-slate: #82defb;
+  --text: #fffaf1;
+  --muted: rgba(255, 245, 230, 0.78);
+  --muted-soft: rgba(255, 245, 230, 0.6);
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.22);
+  --shadow-soft: 0 35px 90px rgba(2, 6, 23, 0.6);
   --radius-lg: 32px;
   --radius-md: 20px;
   --radius-sm: 12px;
@@ -36,8 +36,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--font-body);
-  background: radial-gradient(circle at 12% 18%, rgba(240, 109, 255, 0.22), transparent 52%),
-              radial-gradient(circle at 78% 12%, rgba(252, 144, 81, 0.18), transparent 55%),
+  background: radial-gradient(circle at 18% 20%, rgba(248, 207, 93, 0.22), transparent 58%),
+              radial-gradient(circle at 82% 15%, rgba(63, 226, 214, 0.18), transparent 55%),
               var(--bg);
   color: var(--text);
   line-height: 1.65;
@@ -54,11 +54,11 @@ body::after {
 }
 
 body::before {
-  background: radial-gradient(680px 480px at 8% 82%, rgba(240, 109, 255, 0.18), transparent 65%);
+  background: radial-gradient(680px 480px at 12% 82%, rgba(248, 207, 93, 0.2), transparent 65%);
 }
 
 body::after {
-  background: radial-gradient(820px 620px at 82% 75%, rgba(252, 144, 81, 0.18), transparent 70%);
+  background: radial-gradient(820px 620px at 82% 75%, rgba(63, 226, 214, 0.2), transparent 70%);
 }
 
 img, svg {
@@ -189,8 +189,8 @@ blockquote {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(252, 144, 81, 0.4), transparent 55%),
-              radial-gradient(circle at 80% 30%, rgba(240, 109, 255, 0.35), transparent 60%);
+  background: radial-gradient(circle at 20% 20%, rgba(248, 207, 93, 0.45), transparent 55%),
+              radial-gradient(circle at 80% 30%, rgba(63, 226, 214, 0.35), transparent 60%);
   mix-blend-mode: screen;
   opacity: 0.75;
 }
@@ -305,7 +305,7 @@ blockquote {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(3, 5, 17, 0.35);
+  background: rgba(1, 6, 21, 0.4);
   z-index: -2;
 }
 
@@ -313,7 +313,7 @@ blockquote {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(115deg, rgba(3, 5, 17, 0.6) 0%, rgba(6, 11, 28, 0.5) 45%, rgba(7, 12, 32, 0.38) 70%, rgba(10, 18, 40, 0.25) 100%);
+  background: linear-gradient(120deg, rgba(2, 8, 28, 0.74) 0%, rgba(10, 24, 56, 0.55) 50%, rgba(16, 35, 66, 0.4) 100%);
   z-index: -1;
 }
 
@@ -346,7 +346,7 @@ blockquote {
 }
 
 .hero__panel {
-  background: linear-gradient(135deg, rgba(252, 144, 81, 0.18), rgba(240, 109, 255, 0.2));
+  background: linear-gradient(135deg, rgba(248, 207, 93, 0.2), rgba(63, 226, 214, 0.22));
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: clamp(1.5rem, 3vw, 2.5rem);
@@ -526,7 +526,7 @@ blockquote {
   padding: 2rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-strong);
-  background: linear-gradient(120deg, rgba(84, 255, 227, 0.15), rgba(132, 102, 255, 0.15));
+  background: linear-gradient(120deg, rgba(248, 207, 93, 0.18), rgba(63, 226, 214, 0.18));
   box-shadow: var(--shadow-soft);
   display: grid;
   gap: 0.9rem;
@@ -562,7 +562,7 @@ blockquote {
 .footer {
   border-top: 1px solid var(--border);
   padding: 2.5rem 0 3rem;
-  background: rgba(5, 7, 18, 0.9);
+  background: rgba(2, 7, 24, 0.92);
 }
 
 .footer__grid {
